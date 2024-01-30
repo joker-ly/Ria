@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react';
+import '../src/assets/css/custom.css';
+import {TopNavbar} from './components/TopNavbar';
+import HomeTop from './components/home/HomeTop';
+import Categories from './components/home/Categories';
+import NewArrival from './components/home/NewArrival';
+import Collections from './components/home/Collections';
+import Featured from './components/home/Featured';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export class App extends Component {
+  render() {
+    return (
+      <div className=''>
+        <TopNavbar />
+        <HomeTop />
+        <Categories />
+        <NewArrival />
+        <Collections />
+        <Featured />
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
