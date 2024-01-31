@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import {TopNavbar} from './components/TopNavbar';
 import '../src/assets/css/custom.css';
-
 import Footer from './components/common/Footer';
-import NotificationPage from './pages/NotificationPage';
+import ProductCategoryPage from './pages/ProductCategoryPage';
 
 
 export class App extends Component {
@@ -15,7 +14,7 @@ export class App extends Component {
         <br />
         <br />
         <br />
-        <NotificationPage />
+        <ProductCategoryPage />
         <Footer />
       </div>
     )
