@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import {Link} from 'react-router-dom';
+
 
 export class Register extends Component {
   render() {
@@ -19,8 +21,8 @@ export class Register extends Component {
                                 <Button type="submit" className="btn btn-block m-2 site-btn-login">Sign Up</Button>
                                 <br /><br /><br /><br />
                                 <hr />
-                                <p><b>Forgot my Password? <a href='/forget'> Forgot my password</a></b></p>
-                                <p><b>Already have an account <a href='/login'> Login</a></b></p>
+                                <p><b>Forgot my Password? <Link to='/forget_password'> Forgot my password</Link></b></p>
+                                <p><b>Already have an account <Link to='/login'> Login</Link></b></p>
                             </Form>
                         </Col>
                         <Col className='d-flex justify-content-center' lg={6} md={6} sm={12} xs={12}>

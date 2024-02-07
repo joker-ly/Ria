@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react';
 import {Container, Row, Col, Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 export class Footer extends Component {
   render() {
     return (
@@ -23,9 +24,9 @@ export class Footer extends Component {
                     </Col>
                     <Col className='p-2' lg={3} md={3} sm={6}>
                         <h5>About Company</h5>
-                        <p><Button variant="dark">About us</Button></p>
+                        <p><Link to="/about"><Button variant="dark">About us</Button></Link></p>
                         <p><Button variant="dark">Company</Button></p>
-                        <p><Button variant="dark">Contact us</Button></p>
+                        <p><Link to="/contact_us"><Button variant="dark">Contact us</Button></Link></p>
                     </Col>
                     <Col className='p-2' lg={3} md={3} sm={6}>
                         <h5>Company Address</h5>
@@ -33,6 +34,8 @@ export class Footer extends Component {
                         <span><i className='fa fa-envelope'></i> info@xxx.xx</span>
                     </Col>
                 </Row>
+                <h5 className='address'>Change Language</h5><br /><br />
+                <div id="google_translate_element"></div>
             </Container>
             <Container fluid className='text-center m-0 pt-3 pb-1 bg-light text-black'>
                 <Row>

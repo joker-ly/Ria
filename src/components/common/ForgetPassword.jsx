@@ -1,5 +1,7 @@
 import React, { Component, Fragment } from 'react'
 import {Container, Row, Col, Form, Button} from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+
 
 export class ForgetPassword extends Component {
   render() {
@@ -16,7 +18,8 @@ export class ForgetPassword extends Component {
                                     <Button type="submit" className="btn btn-block m-2 site-btn-login">Reset Password</Button>
                                     <br /><br /><br /><br />
                                     <hr />
-                                    <p><b>New account <a href='/Register'> Login</a></b></p>
+                                    <p><b>New account <Link to='/forget_password'> Forget Password</Link></b></p>
+                                    <p><b>New account <Link to='/register'> Login</Link></b></p>
                                 </Form>
                             </Col>
                             <Col className='d-flex justify-content-center' lg={6} md={6} sm={12} xs={12}>

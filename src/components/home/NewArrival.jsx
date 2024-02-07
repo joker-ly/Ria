@@ -3,15 +3,14 @@ import {Container, Row, Card} from 'react-bootstrap';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import { Link } from 'react-router-dom';
 
 export class NewArrival extends Component {
     
     constructor(){
         super();
-
         this.next=this.next.bind(this);
         this.previous=this.previous.bind(this)
-
     }
     next(){
         this.slider.slickNext();
@@ -28,7 +27,7 @@ export class NewArrival extends Component {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1500,
-      };
+    };
     return (
       <div>
         <Fragment>
@@ -42,41 +41,48 @@ export class NewArrival extends Component {
                 <Row>
                     <Slider ref={c => (this.slider=c)} {...settings}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat2.jpg')}  className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
-                        </div>
-
-                        <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat2.jpg')}  className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat1.png')}  className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
+                        </div>
+                        <div>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat1.png')}  className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
 
                     </Slider>                    

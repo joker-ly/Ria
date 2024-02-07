@@ -1,4 +1,5 @@
 import React, { Component, Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import {Container, Row, Col, Card} from 'react-bootstrap';
 
 export class Collections extends Component {
@@ -13,134 +14,158 @@ export class Collections extends Component {
                 <Row>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat2.jpg')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat2.jpg')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat2.jpg')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat2.jpg')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat2.jpg')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat2.jpg')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat2.jpg')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat2.jpg')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                     <Col className='p-0' lg={3} md={3} sm={6}>
                         <div>
-                            <Card>
-                                <Card.Body>
-                                    <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-100 w-100 text-center'/>
-                                </Card.Body>
-                                <p>Perfect New Laptop with Process i3</p>
-                                <p>Price: 100$</p>
-                            </Card>
+                            <Link to="">
+                                <Card>
+                                    <Card.Body>
+                                        <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-100 w-100 text-center'/>
+                                    </Card.Body>
+                                    <p>Perfect New Laptop with Process i3</p>
+                                    <p>Price: 100$</p>
+                                </Card>
+                            </Link>
                         </div>
                     </Col>
                 </Row>

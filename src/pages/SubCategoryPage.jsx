@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react'
-import Register from '../components/common/Register'
+import SubCategory from '../components/products/SubCategory'
 
-export class RegistrationPage extends Component {
+export class SubCategoryPage extends Component {
   constructor(){
     super();
     window.scroll(0,0)
@@ -10,10 +10,10 @@ export class RegistrationPage extends Component {
   render() {
     return (
       <Fragment>
-        <Register />
+        <SubCategory />
       </Fragment>
     )
   }
 }
 
-export default RegistrationPage
+export default SubCategoryPage

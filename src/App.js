@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
+import React, { Component, Fragment } from 'react';
 import {TopNavbar} from './components/TopNavbar';
 import '../src/assets/css/custom.css';
-import Footer from './components/common/Footer';
-import ProductCategoryPage from './pages/ProductCategoryPage';
+import { BrowserRouter } from 'react-router-dom';
+import AppRouter from './routes/AppRouter';
+import SearchPage from './pages/SearchPage';
+
 
 
 export class App extends Component {
   render() {
     return (
-      <div className=''>
-        <TopNavbar />
-        <br />
-        <br />
-        <br />
-        <br />
-        <ProductCategoryPage />
-        <Footer />
-      </div>
+    <Fragment>
+        <BrowserRouter>
+            <AppRouter />
+        </BrowserRouter>
+    </Fragment>
     )
   }
 }
