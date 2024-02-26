@@ -2,9 +2,8 @@ import React, { Component, Fragment } from 'react';
 
 import HomeTop from '../components/home/HomeTop';
 import Categories from '../components/home/Categories';
-import NewArrival from '../components/home/NewArrival';
-import Collections from '../components/home/Collections';
-import Featured from '../components/home/Featured';
+import Training from '../components/home/Training';
+import Blog from '../components/home/Blog';
 
 
 export class HomePage extends Component {
@@ -15,14 +14,12 @@ export class HomePage extends Component {
     }
   render() {
     return (
-      <Fragment>
-        <HomeTop />
-        <Categories />
-        <NewArrival />
-        <Collections />
-        <Featured />
-        
-      </Fragment>
+        <Fragment>
+          <HomeTop />
+          <Categories />
+          <Training />
+          <Blog />
+        </Fragment>
     )
   }
 }

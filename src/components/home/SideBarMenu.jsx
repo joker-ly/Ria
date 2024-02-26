@@ -1,76 +1,42 @@
 import React, { Component } from 'react';
-import {Accordion, ListGroup} from 'react-bootstrap';
+import { Sidebar } from 'flowbite-react';
+import { HiChartPie, HiShoppingBag,HiOutlineMinusSm,HiOutlinePlusSm} from 'react-icons/hi';
+import { twMerge } from 'tailwind-merge';
+import Logo from'../../assets/images/maharah-logo.svg';
 
 export class SideBarMenu extends Component {
   render() {
     return (
-      <div>
-        <br /><br /><br />
-        <Accordion >
-            <Accordion.Item eventKey="0">
-                <Accordion.Header><img alt="Category item" src={require('../../assets/images/cat1.png')} width={25} height={25}/>Laptops</Accordion.Header>
-                <Accordion.Body>
-                <ListGroup>
-                    <ListGroup.Item action href="#link2">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link3">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link4">No style</ListGroup.Item>
-                </ListGroup>
-                </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="1">
-                <Accordion.Header><img alt="Category item" src={require('../../assets/images/cat2.jpg')} width={25} height={25}/>Tabs</Accordion.Header>
-                <Accordion.Body>
-                <ListGroup>
-                    <ListGroup.Item action href="#link2">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link3">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link4">No style</ListGroup.Item>
-                </ListGroup>
-                </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="2">
-                <Accordion.Header><img alt="Category item" src={require('../../assets/images/cat3.png')} width={25} height={25}/>Desktops</Accordion.Header>
-                <Accordion.Body>
-                <ListGroup>
-                    <ListGroup.Item action href="#link2">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link3">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link4">No style</ListGroup.Item>
-                </ListGroup>
-                </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="3">
-                <Accordion.Header><img alt="Category item" src={require('../../assets/images/cat1.png')} width={25} height={25}/>Smart Phones</Accordion.Header>
-                <Accordion.Body>
-                <ListGroup>
-                    <ListGroup.Item action href="#link2">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link3">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link4">No style</ListGroup.Item>
-                </ListGroup>
-                </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="4">
-                <Accordion.Header><img alt="Category item" src={require('../../assets/images/cat2.jpg')} width={25} height={25}/>Tablets</Accordion.Header>
-                <Accordion.Body>
-                <ListGroup>
-                    <ListGroup.Item action href="#link2">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link3">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link4">No style</ListGroup.Item>
-                </ListGroup>
-                </Accordion.Body>
-            </Accordion.Item>
-            <Accordion.Item eventKey="5">
-                <Accordion.Header><img alt="Category item" src={require('../../assets/images/cat3.png')} width={25} height={25}/>Other</Accordion.Header>
-                <Accordion.Body>
-                <ListGroup>
-                    <ListGroup.Item action href="#link2">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link3">No style</ListGroup.Item>
-                    <ListGroup.Item action href="#link4">No style</ListGroup.Item>
-                </ListGroup>
-                </Accordion.Body>
-            </Accordion.Item>
+      <Sidebar aria-label="Sidebar Maharah">
+      <Sidebar.Logo href="#" img={Logo} imgAlt="Maharah logo">
+        Maharah
+      </Sidebar.Logo>
+      <Sidebar.Items>
+        <Sidebar.ItemGroup>
+        <Sidebar.Collapse
+            icon={HiShoppingBag}
+            label="Training"
+            renderChevronIcon={(theme, open) => {
+              const IconComponent = open ? HiOutlineMinusSm : HiOutlinePlusSm;
 
-        </Accordion>
-   
-      </div>
+              return <IconComponent aria-hidden className={twMerge(theme.label.icon.open[open ? 'on' : 'off'])} />;
+            }}
+          >
+            <Sidebar.Item href="#">Full Stack Web Development</Sidebar.Item>
+            <Sidebar.Item href="#">Mobile App Development</Sidebar.Item>
+            <Sidebar.Item href="#">Back-end Development</Sidebar.Item>
+            <Sidebar.Item href="#">Front-End Development</Sidebar.Item>
+          </Sidebar.Collapse>
+          <Sidebar.Item href="#" icon={HiChartPie}>
+            Blog
+          </Sidebar.Item>
+          <Sidebar.Item href="#" icon={HiChartPie}>
+            Videos
+          </Sidebar.Item>
+          
+        </Sidebar.ItemGroup>
+      </Sidebar.Items>
+    </Sidebar>
     )
   }
 }

@@ -1,8 +1,8 @@
 import React, { Component, Fragment } from 'react';
 
-import {Container, Row, Col, Card} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
+import { Card } from 'flowbite-react';
 
-import { Link } from 'react-router-dom';
 
 export class Categories extends Component {
   render() {
@@ -11,70 +11,30 @@ export class Categories extends Component {
         <Fragment>
             <Container className="text-center mt-5" fluid>
                 <div className='section-title text-center mb-55'>
-                    <h2>CATEGORIES</h2>
-                    <p>Some of our Exclusive Collection, You May Like</p>
+                    <h2>Maharah's journey</h2>
+                    <p>Join the trainees on Maharah's journey, and watch all the special moments in the bootcamp</p>
                 </div>
             </Container>
-            <Row>
-                <Col lg={2} md={2} sm={6}>
-                    <Link to="/computer">
-                        <Card className='h-100 w-100 text-center'>
-                            <Card.Body>
-                                <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-60 w-50 text-center'/>
-                                <h4>Computer</h4>
-                            </Card.Body>
-                        </Card>
-                    </Link>
+            <Row className='w-fit'>
+                <Col lg={3} md={3} sm={3}>
+                  <Card href="#" className="h-auto w-90">
+                    <iframe height="315" src="https://www.youtube.com/embed/vkA5lYSbdD0?si=WJXPpxvME5U0B4YJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>  
+                  </Card>
                 </Col>
-                <Col lg={2} md={2} sm={6}>
-                    <Link to="/">
-                        <Card className='h-100 w-100 text-center'>
-                            <Card.Body>
-                                <img alt="Category item" src={require('../../assets/images/cat2.jpg')} className='h-60 w-50 text-center'/>
-                                <h4>Computer</h4>
-                            </Card.Body>
-                        </Card>
-                    </Link>
+                <Col lg={3} md={3} sm={3}>
+                  <Card href="#" className="h-auto w-90">
+                  <iframe  height="315" src="https://www.youtube.com/embed/zC7bnsHLzf4?si=2mK1f-dxlgNFQyqm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </Card>
                 </Col>
-                <Col lg={2} md={2} sm={6}>
-                    <Link to="/">
-                        <Card className='h-100 w-100 text-center'>
-                            <Card.Body>
-                                <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-60 w-50 text-center'/>
-                                <h4>Computer</h4>
-                            </Card.Body>
-                        </Card>
-                    </Link>
+                <Col lg={3} md={3} sm={3}>
+                  <Card href="#" className="h-auto w-90">
+                  <iframe  height="315" src="https://www.youtube.com/embed/YltaFQ05C0I?si=1R-aQxd7Wcm_aS9n" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </Card>
                 </Col>
-                <Col lg={2} md={2} sm={6}>
-                    <Link to="/">
-                        <Card className='h-100 w-100 text-center'>
-                            <Card.Body>
-                                <img alt="Category item" src={require('../../assets/images/cat1.png')} className='h-60 w-50 text-center'/>
-                                <h4>Computer</h4>
-                            </Card.Body>
-                        </Card>
-                    </Link>
-                </Col>
-                <Col lg={2} md={2} sm={6}>
-                    <Link to="/">
-                        <Card className='h-100 w-100 text-center'>
-                            <Card.Body>
-                                <img alt="Category item" src={require('../../assets/images/cat2.jpg')} className='h-60 w-50 text-center'/>
-                                <h4>Computer</h4>
-                            </Card.Body>
-                        </Card>
-                    </Link>
-                </Col>
-                <Col lg={2} md={2} sm={6}>
-                    <Link to="/">
-                        <Card className='h-100 w-100 text-center'>
-                            <Card.Body>
-                                <img alt="Category item" src={require('../../assets/images/cat3.png')} className='h-60 w-50 text-center'/>
-                                <h4>Computer</h4>
-                            </Card.Body>
-                        </Card>
-                    </Link>
+                <Col lg={3} md={3} sm={3}>
+                  <Card href="#" className="h-auto w-90">
+                  <iframe  height="315" src="https://www.youtube.com/embed/inhIdAd_E4U?si=mcGtk4nm67Q-cy6S" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                  </Card>
                 </Col>
             </Row>
         </Fragment>

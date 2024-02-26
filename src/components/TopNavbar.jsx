@@ -1,46 +1,58 @@
 import React, { Component } from 'react';
-import {Button, Col, Container, Form, Navbar} from 'react-bootstrap';
-import Logo from'../assets/images/logo.png';
-import { Link } from 'react-router-dom';
+import Logo from'../assets/images/maharah-logo.svg';
+// import { Link } from 'react-router-dom';
+// import { Button } from 'react-bootstrap';
+import {
+  Avatar,
+  Dropdown,
+  DropdownDivider,
+  DropdownHeader,
+  DropdownItem,
+  Navbar,
+  NavbarBrand,
+  NavbarCollapse,
+  NavbarLink,
+  NavbarToggle,
+} from 'flowbite-react';
 
 export class TopNavbar extends Component {
-  render() {
-    return (
-        <Navbar expand="lg" className="bg-light" fixed='top'>
-        <Container fluid>
-        {/* Add columns to have a grid */}
-        <Col lg={4} md={4} sm={12} xs={12}>
-          <Navbar.Brand href="#">
-            <Link to="/"><img alt="Main Logo" src={Logo} width={50} height={50} className='d-inline-block' /></Link>
-            MATJER
-          </Navbar.Brand>
-        </Col> 
-        {/* Add columns to have a grid */}
-        <Col lg={3} md={4} sm={12} xs={12}>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-0"
-              aria-label="Search"
-            />
-          <Link to="/search" variant="outline-primary"><i className='fa fa-search'></i></Link>
-          </Form>
-        </Col>
-         {/* Add columns to have a grid */}
-      
-              <Link to="cart_list"><Button variant="outline-primary"><i className='fa fa-shopping-cart'></i>Items 0</Button></Link>
-              <Link to="/favourit"><i className='fa h4 fa-bell'></i>
-                <sup><span className='badge text-white bg-danger align-top'>8</span></sup>
-              </Link>
-              <Link to="/notification"><i className='fa h4 fa-heart'></i>
-                <sup><span className='badge text-white bg-danger align-top'>8</span></sup>
-              </Link>
-              <Link to="/login"><i className='fa fa-share'></i></Link>
-              <Link to="/profile"><i className='fa h4 fa-address-card'></i></Link>
-   
-        </Container>
-      </Navbar>
+  render() {return (
+    <Navbar expand="lg" fluid rounded>
+      <NavbarBrand href="/">
+        <img src={Logo} className="mr-3 h-6 sm:h-9" alt="Flowbite React Logo" />
+        <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">MAHARAH</span>
+      </NavbarBrand>
+      <div className="flex md:order-2">
+        <Dropdown
+          arrowIcon={false}
+          inline
+          label={
+            <Avatar alt="User settings" img="https://flowbite.com/docs/images/people/profile-picture-5.jpg" rounded />
+          }
+        >
+          
+          <DropdownHeader>
+            <span className="block text-sm">Abdulrahman Kablan</span>
+            <span className="block truncate text-sm font-medium">abdulrahman@kablan.ly</span>
+          </DropdownHeader>
+          <DropdownItem>Dashboard</DropdownItem>
+          <DropdownItem>Settings</DropdownItem>
+          <DropdownItem>Earnings</DropdownItem>
+          <DropdownDivider />
+          <DropdownItem>Sign out</DropdownItem>
+        </Dropdown>
+        <NavbarToggle />
+      </div>
+      <NavbarCollapse>
+        <NavbarLink href="/">
+          Home
+        </NavbarLink>
+        <NavbarLink href="/about">About</NavbarLink>
+        <NavbarLink href="/services">Services</NavbarLink>
+        <NavbarLink href="/contact_us">Contact</NavbarLink>
+              </NavbarCollapse>
+    </Navbar>
+
     );
   }
 }

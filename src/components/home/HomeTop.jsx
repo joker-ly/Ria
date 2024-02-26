@@ -9,8 +9,8 @@ export class HomeTop extends Component {
       <Fragment>
         <Container className='p-0 pt-2' fluid>
             <Row>
-                <Col lg={9} md={9} sm={12} xs={12}><HomeSlider /></Col>
-                <Col lg={3} md={3} sm={12} xs={12}><SideBarMenu /></Col>
+                <Col lg={10} md={10} sm={10} xs={10}><HomeSlider /></Col>
+                <Col lg={2} md={2} sm={2} xs={2}><SideBarMenu /></Col>
             </Row>
         </Container>
       </Fragment>
